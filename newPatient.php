@@ -21,7 +21,7 @@ if(isset($_REQUEST['firstName']) && isset($_REQUEST['lastName'])) {
     <input type="text" name="pesel" id="pesel">
     <input type="submit" value="Zapisz">
     </form>
-    ';
+    '; 
 }
 
 ?>
