@@ -3,7 +3,7 @@ $db = new mysqli("localhost", "root", "", "med");
 $appointmentId = $_REQUEST['appointmentID'];
 $q = $db->prepare("SELECT * FROM appointment WHERE id = ?");
 $q->bind_param("i", $appointmentId);
-if($q && $q->execute()) {  
+if($q && $q->execute()) {   
     
     $appointment = $q->get_result()->fetch_assoc();
     $appointmentDate = $appointment['date'];
