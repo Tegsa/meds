@@ -9,7 +9,7 @@ if(isset($_REQUEST['firstName']) && isset($_REQUEST['lastName'])) {
         echo "Pacjent dodany do systemu!";
     }
 } else {
-    echo '
+    echo ' 
     <form action="newPatient.php" method="post">
     <label for="firstName">Imię:</label>
     <input type="text" name="firstName" id="firstName">

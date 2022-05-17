@@ -18,7 +18,7 @@ if($q && $q->execute()) {
        
         $q->bind_param("i", $staffId);
         if($q && $q->execute()) {
-           
+            
             $appointments = $q->get_result();
             $appointmentList = array();
             while($appointment = $appointments->fetch_assoc()) {
